@@ -1,0 +1,139 @@
+{
+	"type": "level3d",
+	"children": [
+		{
+			"type": "model",
+			"name": "RockCliff04",
+			"source": "environment/RockCliff04.FBX",
+			"x": 5.38,
+			"y": -0.5,
+			"rotationZ": -124
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"x": -10,
+			"y": 3.2,
+			"scaleX": 18,
+			"scaleY": 17.59,
+			"scaleZ": 17.5,
+			"kind": 0,
+			"args": [
+				0
+			],
+			"children": [
+				{
+					"type": "model",
+					"name": "RockCliff05",
+					"source": "environment/RockCliff04.FBX",
+					"x": 0.24971428571428572,
+					"y": -0.21034678794769757,
+					"scaleX": 0.05694206890737312,
+					"scaleY": 0.0570515937935127,
+					"scaleZ": 0.05714285714285714,
+					"rotationZ": -124.13638427081975
+				},
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"Default": {
+							"kind": "Opaque",
+							"shadows": true,
+							"culling": true,
+							"light": true
+						},
+						"PBR": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": true,
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					},
+					"diffuseMap": "textures/dirt01.jpg"
+				}
+			]
+		},
+		{
+			"type": "reference",
+			"name": "RockCliff06",
+			"source": "/RockCliff04",
+			"x": -5.28,
+			"y": -5.22,
+			"scaleX": 1.18,
+			"scaleY": 1.18,
+			"scaleZ": 1.18,
+			"rotationZ": -124
+		},
+		{
+			"type": "reference",
+			"name": "ha2",
+			"source": "test-cycle/ha2.prefab",
+			"x": -8.5,
+			"y": 15
+		},
+		{
+			"type": "meshSpray",
+			"name": "meshSpray",
+			"meshes": [
+				{
+					"path": "environment/RockCliff04.FBX",
+					"isRef": false
+				}
+			],
+			"defaultConfig": {
+				"density": 15,
+				"densityOffset": 0,
+				"radius": 0.1,
+				"deleteRadius": 5,
+				"scale": 1,
+				"scaleOffset": 0.1,
+				"rotation": 184,
+				"rotationOffset": 0,
+				"zOffset": 0,
+				"dontRepeatMesh": true,
+				"orientTerrain": 0,
+				"tiltAmount": 0
+			}
+		},
+		{
+			"type": "anim2D",
+			"name": "anim2D"
+		},
+		{
+			"type": "camera",
+			"name": "camera"
+		},
+		{
+			"type": "advancedDecal",
+			"name": "advancedDecalwithaveeeeeryyyylooongname"
+		},
+		{
+			"type": "advancedDecal",
+			"name": "advancedDecal"
+		},
+		{
+			"type": "atlas",
+			"name": "atlas"
+		},
+		{
+			"type": "camera",
+			"name": "camera"
+		},
+		{
+			"type": "camera",
+			"name": "camera"
+		},
+		{
+			"type": "rfx.autoexp",
+			"name": "autoexp"
+		},
+		{
+			"type": "advancedDecal",
+			"name": "advancedDecal"
+		}
+	]
+}

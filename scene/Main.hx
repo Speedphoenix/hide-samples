@@ -16,7 +16,7 @@ class Main extends hxd.App {
 		event.update(dt);
 	}
 
-	function loadScene(?path: String) {
+	function loadScene(path: String) {
 		var res = hxd.Res.load(path);
 		var sceneData = res.toPrefab().load();
 		var sceneRoot = new h3d.scene.Object(s3d);

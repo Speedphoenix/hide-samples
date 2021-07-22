@@ -1,0 +1,12 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "model",
+			"name": "Model",
+			"source": "character/Kobold01/Model.FBX",
+			"x": -7.58,
+			"y": -0.42
+		}
+	]
+}

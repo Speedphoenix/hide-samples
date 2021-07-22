@@ -1,0 +1,9 @@
+{
+	"type": "level3d",
+	"children": [
+		{
+			"type": "box",
+			"name": "box of testl3d"
+		}
+	]
+}

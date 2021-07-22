@@ -14,54 +14,109 @@
 					"name": "icon"
 				},
 				{
+					"typeStr": "17",
+					"name": "props",
+					"kind": null
+				},
+				{
+					"typeStr": "8",
+					"name": "testlist",
+					"kind": null
+				},
+				{
+					"typeStr": "17",
+					"name": "testpropsagain",
+					"kind": null,
+					"editor": {
+						"categories": null
+					}
+				},
+				{
+					"typeStr": "5:df,y,tr,s",
+					"name": "enumtest",
+					"kind": null,
+					"editor": {
+						"categories": [
+							"something"
+						]
+					}
+				},
+				{
 					"typeStr": "11",
-					"name": "color"
+					"name": "color",
+					"editor": {
+						"categories": null
+					}
+				},
+				{
+					"typeStr": "10:f,h,u,y,sdf,f,f,ze,zed,sdf,sdf,sdgf,",
+					"name": "testflags2"
 				},
 				{
 					"typeStr": "13",
 					"name": "path",
-					"opt": true
+					"opt": true,
+					"documentation": "hey"
 				},
 				{
-					"typeStr": "17",
-					"name": "props",
+					"typeStr": "1",
+					"name": "testtext",
+					"kind": null
+				},
+				{
+					"typeStr": "3",
+					"name": "testInt",
+					"kind": null,
+					"editor": {
+						"categories": null
+					}
+				},
+				{
+					"typeStr": "1",
+					"name": "testscript",
+					"kind": "script"
+				},
+				{
+					"typeStr": "1",
+					"name": "test"
+				},
+				{
+					"typeStr": "6:sdfsdf",
+					"name": "hey",
 					"kind": null
 				}
 			],
 			"lines": [
 				{
-					"id": "Char",
-					"props": {
-						"test": 12
-					},
-					"group": 0,
-					"icon": {
-						"file": "ui/icons.png",
-						"size": 40,
-						"x": 0,
-						"y": 0
-					},
-					"path": "character/Merchant/Model.FBX",
-					"color": 8750469
-				},
-				{
 					"id": "Char2",
 					"props": {
-						"test": 12
+						"test": 12,
+						"test3": true
 					},
-					"group": 0,
+					"group": 1,
 					"icon": {
 						"file": "ui/icons.png",
 						"size": 40,
 						"x": 2,
 						"y": 1
 					},
-					"color": 4672255
+					"path": "character/Merchant/Body.jpg",
+					"hey": "Hello",
+					"test": "character/Kobold01/Anim_death.FBX",
+					"testflags2": 0,
+					"testlist": [],
+					"testtext": "",
+					"color": 4672255,
+					"testpropsagain": {},
+					"testscript": "function close() {\n\tif( script != null ) saveValue();\n\tsuper.close();\n}\n\nfunction saveValue() {\n\tvar code = [for( line in script.code.split(\"\\r\\n\").join(\"\\n\").split(\"\\n\") ) StringTools.rtrim(line)].join(\"\\n\");\n\tcell.setValue(code);\n}\n\nfunction refresh() {\n\tvar first = script == null;\n\telement.html(\"<div class='cdb-script'></div>\");\n\tvar div = element.children(\"div\");\n\tvar ids = [];\n\tvar table = cell.table;\n\tvar obj = cell.line.obj;\n\twhile( table != null ) {\n\t\tvar idCol = table.getRealSheet().idCol;\n\t\tif( idCol != null ) {\n\t\t\tvar id = Reflect.field(obj, idCol.name);\n\t\t\tif( id == null ) id = \"#\";\n\t\t\tids.unshift(id);\n\t\t}\n\t\tvar st = Std.downcast(table, SubTable);\n\t\ttable = table.parent;\n\t\tif( st != null ) obj = st.cell.line.obj;\n\t}\n}\n",
+					"enumtest": 0,
+					"testInt": 0
 				},
 				{
 					"id": "Char3",
 					"props": {
-						"test": 12
+						"test": 12,
+						"test3": false
 					},
 					"group": 1,
 					"icon": {
@@ -70,65 +125,724 @@
 						"x": 4,
 						"y": 1
 					},
-					"color": 13917696
+					"path": "textures/dirt01.jpg",
+					"hey": "Hello",
+					"test": "character/Kobold01/Anim_death.FBX",
+					"testflags2": 0,
+					"testlist": [
+						{
+							"testflags": 32,
+							"testId": "test2",
+							"ck;ghsdfg": "",
+							"rtefdg": 0,
+							"nestedlist1": [],
+							"color": 0
+						}
+					],
+					"testtext": "",
+					"color": 13917696,
+					"testpropsagain": {
+						"testflags": 32,
+						"testId": "test2",
+						"ck;ghsdfg": "",
+						"rtefdg": 0,
+						"nestedlist1": []
+					},
+					"testscript": "",
+					"enumtest": 0,
+					"testInt": 0
 				},
 				{
-					"id": "Char4",
+					"id": "somename",
 					"props": {
-						"test": 12
+						"test3": false,
+						"test": 0,
+						"sdfghdfh": null
 					},
+					"testlist": [
+						{
+							"testflags": 32,
+							"testId": "test2",
+							"ck;ghsdfg": "",
+							"rtefdg": 0,
+							"nestedlist1": [],
+							"color": 4672255
+						}
+					],
+					"testflags2": 0,
+					"test": "",
+					"hey": "Hello",
 					"group": 1,
+					"testtext": "",
+					"color": 5167104,
+					"testpropsagain": {},
+					"testscript": "",
+					"enumtest": 0,
+					"testInt": 0
+				},
+				{
+					"id": "",
+					"props": {
+						"test3": false
+					},
+					"testlist": [
+						{
+							"testflags": 0,
+							"testId": "",
+							"nestedlist1": [],
+							"color": 0,
+							"ck;ghsdfg": "",
+							"rtefdg": 0
+						}
+					],
+					"testflags2": 0,
+					"test": "",
+					"hey": "Hello",
+					"group": 1,
+					"testtext": "Hello there",
+					"color": 0,
+					"testpropsagain": {},
+					"testscript": "",
+					"enumtest": 0,
+					"testInt": 0
+				},
+				{
+					"id": "Char",
+					"props": {
+						"test3": false,
+						"sdfghdfh": null,
+						"testcolor": 14487054,
+						"textest": "zeergd"
+					},
+					"group": 3,
 					"icon": {
 						"file": "ui/icons.png",
 						"size": 40,
 						"x": 0,
 						"y": 0
 					},
-					"color": 8750469
+					"path": "character/Merchant/Model.FBX",
+					"hey": "Hello",
+					"test": "me, value",
+					"testflags2": 0,
+					"testlist": [
+						{
+							"testflags": 38,
+							"rtefdg": 0,
+							"ck;ghsdfg": "",
+							"testId": "",
+							"nestedlist1": [
+								{
+									"heyid": "hello1",
+									"testflags": 0
+								},
+								{
+									"heyid": "hello4",
+									"testflags": 14
+								},
+								{
+									"heyid": "hello3",
+									"testflags": 0
+								}
+							],
+							"color": 0
+						},
+						{
+							"testflags": 0,
+							"rtefdg": 0,
+							"ck;ghsdfg": "sdrfgsdfghsdfhgzqsdfhgsdfhsdflkg,sdmflgks,dflgknsdflgknsùlkdfgnsùldfkhgnsùlkdfhgnsùlkdfngùskldfhgnsdfg",
+							"testId": "test3",
+							"nestedlist1": [],
+							"testtiles": {
+								"file": "ui/icons.png",
+								"size": 40,
+								"x": 0,
+								"y": 0
+							},
+							"color": 0
+						},
+						{
+							"testflags": 1,
+							"rtefdg": 0,
+							"ck;ghsdfg": "Hello",
+							"testId": "",
+							"nestedlist1": [],
+							"color": 4672255
+						},
+						{
+							"testflags": 36,
+							"rtefdg": 0,
+							"ck;ghsdfg": "",
+							"testId": "",
+							"nestedlist1": [],
+							"color": 0,
+							"testtiles": {
+								"file": "ui/icons.png",
+								"size": 40,
+								"x": 2,
+								"y": 1
+							}
+						},
+						{
+							"testflags": 20,
+							"rtefdg": 0,
+							"ck;ghsdfg": "",
+							"testId": "",
+							"nestedlist1": [],
+							"color": 0
+						}
+					],
+					"testtext": "é",
+					"color": 8750469,
+					"testpropsagain": {},
+					"testscript": "",
+					"enumtest": 0,
+					"testInt": 100,
+					"testInt__f": "testFormula"
 				},
 				{
 					"id": "Char5",
 					"props": {
-						"test": 12
+						"test": 5167104,
+						"hey": 0,
+						"test3": false,
+						"testsubproplist": [
+							{
+								"hey": ""
+							}
+						],
+						"testcolor": 5167104,
+						"tiletest": null,
+						"rdhgyyr": "",
+						"textest": ".addCla"
 					},
-					"group": 1,
+					"group": 3,
 					"icon": {
 						"file": "ui/icons.png",
 						"size": 40,
 						"x": 7,
 						"y": 1
 					},
-					"color": 5167104
+					"path": "character/Merchant/Body.jpg",
+					"hey": "Hello",
+					"test": "",
+					"testflags2": 0,
+					"testlist": [],
+					"testtext": ".addCla",
+					"color": 5167104,
+					"testpropsagain": {
+						"ghjkdfhjk": "",
+						"sgfhksgyhk": "",
+						"sfgjyhk": 0
+					},
+					"testscript": "",
+					"enumtest": 2,
+					"testInt": 200,
+					"testInt__f": "testFormula"
+				},
+				{
+					"id": "A_NOTICEABLE_NAME",
+					"props": {
+						"test": 12,
+						"test3": true,
+						"sdfghdfh": null
+					},
+					"group": 3,
+					"hey": "Hello",
+					"test": "",
+					"testflags2": 0,
+					"testlist": [],
+					"testtext": "Hello there",
+					"color": 0,
+					"testpropsagain": {},
+					"testscript": "",
+					"enumtest": 0,
+					"testInt": 7
+				},
+				{
+					"id": "Char4",
+					"props": {
+						"test": 12,
+						"tiletest": {
+							"file": "ui/icons.png",
+							"size": 40,
+							"x": 9,
+							"y": 1
+						},
+						"sdfghdfh": {
+							"file": "textures/dirt01.jpg",
+							"size": 100,
+							"x": 2,
+							"y": 3
+						},
+						"rdhgyyr": "utyg",
+						"qdrgqdrg": "sdfgs,kd,jhfgqkldjhbgfqlsdkjhgbqldrfkjhgbqd;fjkhgbsqdfg",
+						"hey": 0,
+						"dfgthhq": 0,
+						"testflags": 9,
+						"test3": true
+					},
+					"group": 3,
+					"icon": {
+						"file": "ui/icons.png",
+						"size": 40,
+						"x": 1,
+						"y": 1
+					},
+					"hey": "Hello",
+					"test": "[{ swdths : \"character/Kobold01/Anim_death.FBX\" }]",
+					"testflags2": 0,
+					"testlist": [],
+					"testtext": "Hello there",
+					"color": 8750469,
+					"testpropsagain": {},
+					"testscript": "",
+					"enumtest": 0,
+					"testInt": 0
+				},
+				{
+					"id": "sgadablouch",
+					"props": {
+						"test3": false
+					},
+					"testlist": [],
+					"testflags2": 0,
+					"test": "",
+					"hey": "Hello",
+					"group": 4,
+					"testtext": "Hello there",
+					"color": 0,
+					"testpropsagain": {},
+					"testscript": "",
+					"enumtest": 0,
+					"testInt": 0
+				},
+				{
+					"id": "",
+					"props": {
+						"test3": false
+					},
+					"testlist": [],
+					"testpropsagain": {},
+					"enumtest": 0,
+					"color": 0,
+					"testflags2": 0,
+					"testtext": "Hello there",
+					"testscript": "",
+					"test": "",
+					"hey": "",
+					"group": 4,
+					"testInt": 0
+				},
+				{
+					"id": "",
+					"props": {
+						"test3": false
+					},
+					"testlist": [],
+					"testpropsagain": {},
+					"enumtest": 0,
+					"color": 0,
+					"testflags2": 0,
+					"testtext": "",
+					"testscript": "",
+					"test": "",
+					"hey": "",
+					"group": 4,
+					"testInt": 0
+				},
+				{
+					"id": "",
+					"props": {
+						"test3": false
+					},
+					"testlist": [],
+					"testpropsagain": {},
+					"enumtest": 0,
+					"color": 0,
+					"testflags2": 0,
+					"testtext": "",
+					"testscript": "",
+					"test": "",
+					"hey": "",
+					"group": 4,
+					"testInt": 0
+				},
+				{
+					"id": "",
+					"props": {
+						"test3": false
+					},
+					"testlist": [],
+					"testpropsagain": {},
+					"enumtest": 0,
+					"color": 0,
+					"testflags2": 0,
+					"testtext": "",
+					"testscript": "",
+					"test": "",
+					"hey": "",
+					"group": 4,
+					"testInt": 0
 				}
 			],
 			"props": {
 				"separatorTitles": [
-					"Group1",
-					"Group2"
+					null,
+					"Hello",
+					null,
+					null,
+					"group4",
+					"group3",
+					"bvonjour"
 				],
-				"hasGroup": true
+				"hasGroup": true,
+				"editor": {
+					"categories": null
+				}
 			},
-			"separatorIds": [
-				"Char",
-				"Char3"
+			"separators": [
+				0,
+				0,
+				1,
+				2,
+				4,
+				4,
+				8
 			]
 		},
 		{
 			"name": "sdfsdf",
 			"columns": [
 				{
-					"typeStr": "11",
-					"name": "color",
+					"typeStr": "0",
+					"name": "id",
+					"kind": null,
+					"scope": null
+				},
+				{
+					"typeStr": "1",
+					"name": "teststring",
+					"kind": null
+				},
+				{
+					"typeStr": "17",
+					"name": "testprops",
+					"kind": null
+				},
+				{
+					"typeStr": "14",
+					"name": "sometile",
 					"kind": null
 				}
 			],
 			"lines": [
 				{
-					"color": 13893632
+					"id": "",
+					"testprops": {
+						"test": 0
+					},
+					"teststring": ""
+				},
+				{
+					"id": "",
+					"testprops": {},
+					"teststring": ""
+				},
+				{
+					"id": "",
+					"testprops": {},
+					"teststring": ""
+				},
+				{
+					"sometile": {
+						"file": "textures/dirt01.jpg",
+						"size": 200,
+						"x": 1,
+						"y": 0
+					},
+					"id": "Hello",
+					"testprops": {},
+					"teststring": ""
+				}
+			],
+			"separators": [
+				3
+			],
+			"props": {
+				"separatorTitles": [
+					"hey"
+				],
+				"editor": {
+					"categories": [
+						"something",
+						"hello"
+					]
+				}
+			}
+		},
+		{
+			"name": "sheet2",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "ID",
+					"kind": null,
+					"scope": null
+				}
+			],
+			"lines": [
+				{
+					"ID": "ID1"
+				},
+				{
+					"ID": "ID0"
+				},
+				{
+					"ID": "ID2"
+				},
+				{
+					"ID": ""
+				},
+				{
+					"ID": "ID3"
+				},
+				{
+					"ID": "ID4"
+				},
+				{
+					"ID": "A_NOTICEABLE_NAME"
+				},
+				{
+					"ID": "ID5"
+				},
+				{
+					"ID": "ID6"
+				}
+			],
+			"props": {
+				"separatorTitles": [
+					"group1",
+					null,
+					"group2",
+					"group3"
+				]
+			},
+			"separatorIds": [
+				"ID1",
+				"ID3",
+				"ID4",
+				"ID6"
+			]
+		},
+		{
+			"name": "I got reincarnated in a game engine graphical editor as the name of a database sheet, but I'm for testing purposes only?? The story of how I became the strongest Table name in existence.",
+			"columns": [],
+			"separators": [],
+			"props": {
+				"editor": {
+					"categories": [
+						"hello"
+					]
+				},
+				"dataFiles": "hello"
+			}
+		},
+		{
+			"name": "sheet1",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id",
+					"kind": null,
+					"scope": null
+				},
+				{
+					"typeStr": "3",
+					"name": "testint",
+					"kind": null
+				},
+				{
+					"typeStr": "3",
+					"name": "testInt2",
+					"kind": null
+				},
+				{
+					"typeStr": "3",
+					"name": "testint3",
+					"kind": null
+				},
+				{
+					"typeStr": "3",
+					"name": "ergfdfg",
+					"kind": null
+				}
+			],
+			"separators": [],
+			"props": {
+				"dataFiles": "testdatafiles1"
+			}
+		},
+		{
+			"name": "sheet8",
+			"columns": [],
+			"separators": [],
+			"props": {
+				"dataFiles": "testdatafiles4"
+			}
+		},
+		{
+			"name": "sheet9",
+			"columns": [],
+			"lines": [],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "sheet10",
+			"columns": [],
+			"lines": [],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "sheet3",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "idSheet3",
+					"kind": null,
+					"scope": null
+				},
+				{
+					"typeStr": "6:sheet3",
+					"name": "inherits",
+					"opt": true
+				},
+				{
+					"typeStr": "1",
+					"name": "texttest",
+					"kind": null
+				},
+				{
+					"typeStr": "6:character",
+					"name": "requires",
+					"opt": true,
+					"kind": null
+				}
+			],
+			"lines": [
+				{
+					"idSheet3": "s31",
+					"requires": "A_NOTICEABLE_NAME",
+					"texttest": ""
+				},
+				{
+					"idSheet3": "s32",
+					"inherits": "s31",
+					"requires": "Char3",
+					"texttest": ""
+				},
+				{
+					"idSheet3": "s33",
+					"inherits": "s31",
+					"requires": "Char3",
+					"texttest": ""
+				},
+				{
+					"idSheet3": "s34",
+					"inherits": "s32",
+					"requires": "A_NOTICEABLE_NAME",
+					"texttest": ""
+				},
+				{
+					"idSheet3": "s35",
+					"inherits": "s31",
+					"requires": "Char2",
+					"texttest": ""
 				}
 			],
 			"separators": [],
 			"props": {}
+		},
+		{
+			"name": "sheet4",
+			"columns": [
+				{
+					"typeStr": "6:character@testlist@nestedlist1",
+					"name": "",
+					"kind": null
+				},
+				{
+					"typeStr": "6:character",
+					"name": "ref to not-nested",
+					"kind": null
+				}
+			],
+			"lines": [
+				{
+					"": "hello1",
+					"ref to not-nested": "Char2"
+				},
+				{
+					"": "hello3",
+					"ref to not-nested": "Char2"
+				},
+				{
+					"": "",
+					"ref to not-nested": "Char2"
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "sheet6scripttest",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id",
+					"kind": null,
+					"scope": null
+				},
+				{
+					"typeStr": "1",
+					"name": "testscript",
+					"kind": "script"
+				}
+			],
+			"lines": [
+				{
+					"id": "sdgf",
+					"testscript": "// This was a script with errors"
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "sheet7",
+			"columns": [],
+			"lines": [],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "sdfsdf@testprops",
+			"props": {
+				"hide": true,
+				"isProps": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "10:d,dfg,hello world,g,a,a,z,f,s",
+					"name": "test",
+					"opt": true,
+					"kind": null
+				}
+			]
 		},
 		{
 			"name": "character@props",
@@ -143,6 +857,192 @@
 					"typeStr": "3",
 					"name": "test",
 					"opt": true,
+					"kind": null
+				},
+				{
+					"typeStr": "3",
+					"name": "hey",
+					"opt": true,
+					"display": 1
+				},
+				{
+					"typeStr": "14",
+					"name": "tiletest",
+					"opt": true,
+					"documentation": "hello2\nsdfsdf\nsdfsdf",
+					"kind": "hidden"
+				},
+				{
+					"typeStr": "14",
+					"name": "sdfghdfh",
+					"opt": true,
+					"kind": null
+				},
+				{
+					"typeStr": "1",
+					"name": "rdhgyyr",
+					"opt": true,
+					"kind": null
+				},
+				{
+					"typeStr": "2",
+					"name": "test3"
+				},
+				{
+					"typeStr": "1",
+					"name": "qdrgqdrg",
+					"opt": true,
+					"kind": null
+				},
+				{
+					"typeStr": "4",
+					"name": "shgj",
+					"opt": true,
+					"kind": null
+				},
+				{
+					"typeStr": "5:",
+					"name": "dfgthhq",
+					"opt": true,
+					"kind": null
+				},
+				{
+					"typeStr": "5:",
+					"name": "dfgdfgdf",
+					"opt": true,
+					"kind": null
+				},
+				{
+					"typeStr": "10:f,h,u,y,sdf,f,f,ze,zed,sdf,sdf,sdgf,qsdgvb",
+					"name": "testflags",
+					"opt": true
+				},
+				{
+					"typeStr": "8",
+					"name": "testsubproplist",
+					"opt": true,
+					"kind": null
+				},
+				{
+					"typeStr": "11",
+					"name": "testcolor",
+					"opt": true,
+					"kind": null
+				},
+				{
+					"typeStr": "1",
+					"name": "textest",
+					"opt": true,
+					"kind": null
+				}
+			]
+		},
+		{
+			"name": "character@props@testsubproplist",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "hey",
+					"kind": null
+				}
+			]
+		},
+		{
+			"name": "character@testlist",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "10:a,z,e,r,t,y,u,u",
+					"name": "testflags",
+					"kind": null
+				},
+				{
+					"typeStr": "0",
+					"name": "testId",
+					"kind": null,
+					"scope": 1
+				},
+				{
+					"typeStr": "14",
+					"name": "testtiles",
+					"kind": null
+				},
+				{
+					"typeStr": "8",
+					"name": "nestedlist1",
+					"kind": null
+				},
+				{
+					"typeStr": "11",
+					"name": "color",
+					"kind": null
+				},
+				{
+					"typeStr": "1",
+					"name": "ck;ghsdfg",
+					"kind": null
+				},
+				{
+					"typeStr": "5:e,d,f,z",
+					"name": "rtefdg",
+					"kind": null
+				}
+			]
+		},
+		{
+			"name": "character@testpropsagain",
+			"props": {
+				"hide": true,
+				"isProps": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "ghjkdfhjk",
+					"opt": true,
+					"kind": null
+				},
+				{
+					"typeStr": "1",
+					"name": "sgfhksgyhk",
+					"opt": true,
+					"kind": null
+				},
+				{
+					"typeStr": "3",
+					"name": "sfgjyhk",
+					"opt": true,
+					"kind": null
+				}
+			]
+		},
+		{
+			"name": "character@testlist@nestedlist1",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "heyid",
+					"kind": null
+				},
+				{
+					"typeStr": "10:v,b,n,m",
+					"name": "testflags",
 					"kind": null
 				}
 			]

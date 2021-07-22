@@ -1,0 +1,821 @@
+{
+	"type": "level3d",
+	"children": [
+		{
+			"type": "model",
+			"name": "RockCliff04",
+			"source": "environment/RockCliff04.FBX",
+			"x": 5.38,
+			"y": -0.5,
+			"rotationZ": -124
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"x": -10.06,
+			"y": 1.86,
+			"scaleX": 18,
+			"scaleY": 17.59,
+			"scaleZ": 17.5,
+			"kind": 0,
+			"args": [
+				0
+			],
+			"children": [
+				{
+					"type": "model",
+					"name": "RockCliff05",
+					"source": "environment/RockCliff04.FBX",
+					"x": 0.24971428571428572,
+					"y": -0.21034678794769757,
+					"scaleX": 0.05694206890737312,
+					"scaleY": 0.0570515937935127,
+					"scaleZ": 0.05714285714285714,
+					"rotationZ": -124.13638427081975
+				},
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"Default": {
+							"kind": "Opaque",
+							"shadows": true,
+							"culling": true,
+							"light": true
+						},
+						"PBR": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": true,
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					},
+					"diffuseMap": "textures/dirt01.jpg"
+				}
+			]
+		},
+		{
+			"type": "reference",
+			"name": "RockCliff06",
+			"source": "/RockCliff04",
+			"x": -5.28,
+			"y": -5.22,
+			"scaleX": 1.18,
+			"scaleY": 1.18,
+			"scaleZ": 1.18,
+			"rotationZ": -124
+		},
+		{
+			"type": "reference",
+			"name": "ha2",
+			"source": "test-cycle/ha2.prefab",
+			"x": -8.5,
+			"y": 15
+		},
+		{
+			"type": "meshSpray",
+			"name": "meshSpray",
+			"locked": true,
+			"meshes": [
+				{
+					"path": "environment/RockCliff04.FBX",
+					"isRef": false
+				}
+			],
+			"defaultConfig": {
+				"density": 15,
+				"densityOffset": 0,
+				"radius": 0.1,
+				"deleteRadius": 5,
+				"scale": 1,
+				"scaleOffset": 0.1,
+				"rotation": 184,
+				"rotationOffset": 0,
+				"zOffset": 0,
+				"dontRepeatMesh": true,
+				"orientTerrain": 0,
+				"tiltAmount": 0,
+				"enableBrush": true
+			},
+			"children": [
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.719,
+					"y": -8.87,
+					"scaleX": 1.046,
+					"scaleY": 1.046,
+					"scaleZ": 1.046,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.883,
+					"y": -8.89,
+					"scaleX": 1.083,
+					"scaleY": 1.083,
+					"scaleZ": 1.083,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.786,
+					"y": -8.896,
+					"scaleX": 1.02,
+					"scaleY": 1.02,
+					"scaleZ": 1.02,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.742,
+					"y": -8.836,
+					"scaleX": 1.038,
+					"scaleY": 1.038,
+					"scaleZ": 1.038,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.857,
+					"y": -8.835,
+					"scaleX": 1.047,
+					"scaleY": 1.047,
+					"scaleZ": 1.047,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.788,
+					"y": -8.791,
+					"scaleX": 1.05,
+					"scaleY": 1.05,
+					"scaleZ": 1.05,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.743,
+					"y": -8.796,
+					"scaleX": 0.9115,
+					"scaleY": 0.9115,
+					"scaleZ": 0.9115,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.826,
+					"y": -8.939,
+					"scaleX": 0.967,
+					"scaleY": 0.967,
+					"scaleZ": 0.967,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.789,
+					"y": -8.955,
+					"scaleX": 0.997,
+					"scaleY": 0.997,
+					"scaleZ": 0.997,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.769,
+					"y": -8.85,
+					"scaleX": 1.096,
+					"scaleY": 1.096,
+					"scaleZ": 1.096,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.86,
+					"y": -8.927,
+					"scaleX": 0.9343,
+					"scaleY": 0.9343,
+					"scaleZ": 0.9343,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.784,
+					"y": -8.822,
+					"scaleX": 0.9764,
+					"scaleY": 0.9764,
+					"scaleZ": 0.9764,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.81,
+					"y": -8.879,
+					"scaleX": 0.9864,
+					"scaleY": 0.9864,
+					"scaleZ": 0.9864,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.88,
+					"y": -8.828,
+					"scaleX": 1.053,
+					"scaleY": 1.053,
+					"scaleZ": 1.053,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.722,
+					"y": -8.931,
+					"scaleX": 1.089,
+					"scaleY": 1.089,
+					"scaleZ": 1.089,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.662,
+					"y": 1.966,
+					"scaleX": 1.022,
+					"scaleY": 1.022,
+					"scaleZ": 1.022,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.622,
+					"y": 1.905,
+					"scaleX": 0.9065,
+					"scaleY": 0.9065,
+					"scaleZ": 0.9065,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.626,
+					"y": 1.817,
+					"scaleX": 1.011,
+					"scaleY": 1.011,
+					"scaleZ": 1.011,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.578,
+					"y": 1.963,
+					"scaleX": 1.094,
+					"scaleY": 1.094,
+					"scaleZ": 1.094,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.543,
+					"y": 1.871,
+					"scaleX": 0.9904,
+					"scaleY": 0.9904,
+					"scaleZ": 0.9904,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.636,
+					"y": 2.009,
+					"scaleX": 1.057,
+					"scaleY": 1.057,
+					"scaleZ": 1.057,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.713,
+					"y": 1.9,
+					"scaleX": 1.016,
+					"scaleY": 1.016,
+					"scaleZ": 1.016,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.555,
+					"y": 1.945,
+					"scaleX": 0.9161,
+					"scaleY": 0.9161,
+					"scaleZ": 0.9161,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.696,
+					"y": 1.921,
+					"scaleX": 1.003,
+					"scaleY": 1.003,
+					"scaleZ": 1.003,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.613,
+					"y": 1.949,
+					"scaleX": 1.007,
+					"scaleY": 1.007,
+					"scaleZ": 1.007,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.594,
+					"y": 1.892,
+					"scaleX": 1.024,
+					"scaleY": 1.024,
+					"scaleZ": 1.024,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.691,
+					"y": 1.863,
+					"scaleX": 1.078,
+					"scaleY": 1.078,
+					"scaleZ": 1.078,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.656,
+					"y": 1.839,
+					"scaleX": 1.003,
+					"scaleY": 1.003,
+					"scaleZ": 1.003,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.641,
+					"y": 1.944,
+					"scaleX": 0.9609,
+					"scaleY": 0.9609,
+					"scaleZ": 0.9609,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.721,
+					"y": 1.941,
+					"scaleX": 0.9087,
+					"scaleY": 0.9087,
+					"scaleZ": 0.9087,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.61,
+					"y": 3.181,
+					"scaleX": 0.9228,
+					"scaleY": 0.9228,
+					"scaleZ": 0.9228,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.699,
+					"y": 3.264,
+					"scaleX": 0.9172,
+					"scaleY": 0.9172,
+					"scaleZ": 0.9172,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.628,
+					"y": 3.223,
+					"scaleX": 0.998,
+					"scaleY": 0.998,
+					"scaleZ": 0.998,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.737,
+					"y": 3.107,
+					"scaleX": 1.018,
+					"scaleY": 1.018,
+					"scaleZ": 1.018,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.786,
+					"y": 3.23,
+					"scaleX": 1.032,
+					"scaleY": 1.032,
+					"scaleZ": 1.032,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.733,
+					"y": 3.251,
+					"scaleX": 0.9199,
+					"scaleY": 0.9199,
+					"scaleZ": 0.9199,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.727,
+					"y": 3.159,
+					"scaleX": 0.9488,
+					"scaleY": 0.9488,
+					"scaleZ": 0.9488,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.728,
+					"y": 3.224,
+					"scaleX": 0.9762,
+					"scaleY": 0.9762,
+					"scaleZ": 0.9762,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.689,
+					"y": 3.213,
+					"scaleX": 1.066,
+					"scaleY": 1.066,
+					"scaleZ": 1.066,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.638,
+					"y": 3.178,
+					"scaleX": 1.068,
+					"scaleY": 1.068,
+					"scaleZ": 1.068,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.699,
+					"y": 3.164,
+					"scaleX": 0.9737,
+					"scaleY": 0.9737,
+					"scaleZ": 0.9737,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.628,
+					"y": 3.131,
+					"scaleX": 1.075,
+					"scaleY": 1.075,
+					"scaleZ": 1.075,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.754,
+					"y": 3.209,
+					"scaleX": 0.9439,
+					"scaleY": 0.9439,
+					"scaleZ": 0.9439,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.767,
+					"y": 3.169,
+					"scaleX": 1.071,
+					"scaleY": 1.071,
+					"scaleZ": 1.071,
+					"rotationZ": -176
+				},
+				{
+					"type": "model",
+					"name": "RockCliff04",
+					"source": "environment/RockCliff04.FBX",
+					"x": -3.676,
+					"y": 3.129,
+					"scaleX": 0.9136,
+					"scaleY": 0.9136,
+					"scaleZ": 0.9136,
+					"rotationZ": -176
+				}
+			]
+		},
+		{
+			"type": "box",
+			"name": "advancedDecalwithaveeeeeryyyylooongname"
+		},
+		{
+			"type": "box",
+			"name": "box",
+			"x": -5.54,
+			"y": 12.68
+		},
+		{
+			"type": "box",
+			"name": "box",
+			"props": {
+				"id": "Scene_box",
+				"testint": 2,
+				"$cdbtype": "sheet1",
+				"testInt2": 3,
+				"tag": null
+			},
+			"x": -5.54,
+			"y": 12.68
+		},
+		{
+			"type": "box",
+			"name": "box",
+			"x": -5.54,
+			"y": 12.68
+		},
+		{
+			"type": "box",
+			"name": "box",
+			"x": -15.47,
+			"y": 27.15,
+			"children": [
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box",
+					"x": 75.28,
+					"y": 2.81
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box",
+					"x": 3.47,
+					"y": 9.39
+				},
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				}
+			]
+		},
+		{
+			"type": "box",
+			"name": "box",
+			"x": -5.54,
+			"y": 12.68
+		},
+		{
+			"type": "reference",
+			"name": "test3",
+			"source": "test-cycle/test3.l3d",
+			"x": 5,
+			"y": 4.85,
+			"editMode": true
+		}
+	]
+}
