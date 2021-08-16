@@ -616,7 +616,11 @@
 				"testint": 2,
 				"$cdbtype": "sheet1",
 				"testInt2": 3,
-				"tag": null
+				"tag": null,
+				"testprops": {
+					"teststring": "hello"
+				},
+				"testScript4": "trace(\"hello\");\n\t\tlayoutControls.find(\".handle-top .drag-handle\").first().mousedown((e : js.jquery.Event) -> { currentSide = Top; initDrag(e); }).dblclick((e) -> { e.preventDefault(); resetLayout(); });\n\n\n\t\tlayoutControls.find(\".handle-top .drag-handle\").first()\n\t\t\t.mousedown((e : js.jquery.Event) -> {\n\t\t\t\tcurrentSide = Top;\n\t\t\t\tinitDrag(e);\n\t\t\t})\n\t\t\t.dblclick((e) -> {\n\t\t\t\te.preventDefault();\n\t\t\t\tresetLayout();\n\t\t\t});\n\n\tpublic function new(extensions,?parent,?root) {\n\t\tif( root == null )\n\t\t\troot = new Element(\"<input>\");\n\t\tsuper(parent,root);\n\t\troot.addClass(\"file\");\n\t\tthis.extensions = extensions;\n\t\tpath = null;\n\t\troot.mousedown(function(e) {\n\t\t\te.preventDefault();\n\t\t\tif( e.button == 0 ) {\n\t\t\t\tide.chooseFile(extensions, function(path) {\n\t\t\t\t\tthis.path = path;\n\t\t\t\t\tonChange();\n\t\t\t\t}, false, path);\n\t\t\t}\n\t\t});"
 			},
 			"x": -5.54,
 			"y": 12.68
@@ -624,6 +628,17 @@
 		{
 			"type": "box",
 			"name": "box",
+			"props": {
+				"id": "Scene_box",
+				"testint": 5,
+				"testInt2": 0,
+				"testint3": 0,
+				"ergfdfg": 0,
+				"testprops": {},
+				"$cdbtype": "sheet1",
+				"testRef": "s311",
+				"testScript2": "function makeContent(parent:IconTreeItem<T>) {\n\ttrace(\"makecontent()\", parent == null ? \"nullparent\" : parent.text);\n\tvar content : Array<IconTreeItem<T>> = get(parent == null ? null : getValue(parent)); for( c in content ) {var key = (parent == null ? \"\" : parent.absKey + \"/\") + c.text;if( c.absKey == null ) c.absKey = key;c.id = \"titem__\" + (UID++);map.set(c.id, c); if( Std.is(c.value, String) )\n\t\t\trevMapString.set(null);\n\t\telse {\n\t\t\trevMap.set(c.value, c);\n\t\t\tvalues.set(c.id, c.value);\n\t\t\tc.value = null;\n\t\t}\n\t\tif( c.state == null ) {\n\t\t\tvar s = getDisplayState(key);\n\t\t\tif( s != null ) c.state = { opened : s }; else c.state = {};\n\t\t}\n\t\tif( !async && c.children ) {\n\t\t\tc.state.loaded = true;\n\t\t\tc.children = null;\n\t\t}\n\t}\n\treturn content;\n}\n\n\n"
+			},
 			"x": -5.54,
 			"y": 12.68
 		},
@@ -805,9 +820,9 @@
 		},
 		{
 			"type": "box",
-			"name": "box",
-			"x": -5.54,
-			"y": 12.68
+			"name": "Dupliquee",
+			"x": -8.73,
+			"y": 12.13
 		},
 		{
 			"type": "reference",
@@ -816,6 +831,39 @@
 			"x": 5,
 			"y": 4.85,
 			"editMode": true
+		},
+		{
+			"type": "box",
+			"name": "namedbox",
+			"x": -13.223441987409034,
+			"y": 19.093732349701718,
+			"z": -3.552713678800501e-15,
+			"children": [
+				{
+					"type": "box",
+					"name": "box"
+				},
+				{
+					"type": "box",
+					"name": "box"
+				}
+			]
+		},
+		{
+			"type": "box",
+			"name": "namedbox",
+			"x": -15.21,
+			"y": 20.38,
+			"children": [
+				{
+					"type": "box",
+					"name": "box"
+				}
+			]
+		},
+		{
+			"type": "box",
+			"name": "box_to_dup"
 		}
 	]
 }

@@ -6,6 +6,8 @@
 		{
 			"type": "polygon",
 			"name": "polygon",
+			"x": 0.33,
+			"y": 0.05,
 			"scaleX": 17.5,
 			"scaleY": 17.5,
 			"scaleZ": 17.5,
@@ -63,7 +65,10 @@
 								"PBR": {
 									"mode": "BeforeTonemapping",
 									"blend": "Alpha",
-									"shadows": false
+									"shadows": false,
+									"depthTest": "Less",
+									"colorMask": 15,
+									"enableStencil": false
 								},
 								"Default": {
 									"kind": "Alpha",
@@ -98,8 +103,8 @@
 													"mode": 2
 												},
 												{
-													"time": 0.735,
-													"value": 1,
+													"time": 0.575,
+													"value": 0.5666666666666667,
 													"mode": 2
 												},
 												{
@@ -152,6 +157,15 @@
 							"shadows": true,
 							"culling": true,
 							"light": true
+						},
+						"PBR": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": true,
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
 						}
 					},
 					"children": [

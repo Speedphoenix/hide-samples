@@ -88,7 +88,7 @@
 			],
 			"lines": [
 				{
-					"id": "Char2",
+					"id": "Char1",
 					"props": {
 						"test": 12,
 						"test3": true
@@ -97,7 +97,7 @@
 					"icon": {
 						"file": "ui/icons.png",
 						"size": 40,
-						"x": 2,
+						"x": 5,
 						"y": 1
 					},
 					"path": "character/Merchant/Body.jpg",
@@ -106,7 +106,7 @@
 					"testflags2": 0,
 					"testlist": [],
 					"testtext": "",
-					"color": 4672255,
+					"color": 6859423,
 					"testpropsagain": {},
 					"testscript": "function close() {\n\tif( script != null ) saveValue();\n\tsuper.close();\n}\n\nfunction saveValue() {\n\tvar code = [for( line in script.code.split(\"\\r\\n\").join(\"\\n\").split(\"\\n\") ) StringTools.rtrim(line)].join(\"\\n\");\n\tcell.setValue(code);\n}\n\nfunction refresh() {\n\tvar first = script == null;\n\telement.html(\"<div class='cdb-script'></div>\");\n\tvar div = element.children(\"div\");\n\tvar ids = [];\n\tvar table = cell.table;\n\tvar obj = cell.line.obj;\n\twhile( table != null ) {\n\t\tvar idCol = table.getRealSheet().idCol;\n\t\tif( idCol != null ) {\n\t\t\tvar id = Reflect.field(obj, idCol.name);\n\t\t\tif( id == null ) id = \"#\";\n\t\t\tids.unshift(id);\n\t\t}\n\t\tvar st = Std.downcast(table, SubTable);\n\t\ttable = table.parent;\n\t\tif( st != null ) obj = st.cell.line.obj;\n\t}\n}\n",
 					"enumtest": 0,
@@ -115,15 +115,16 @@
 				{
 					"id": "Char3",
 					"props": {
-						"test": 12,
-						"test3": false
+						"test3": false,
+						"test": 0,
+						"sdfghdfh": null
 					},
 					"group": 1,
 					"icon": {
 						"file": "ui/icons.png",
 						"size": 40,
-						"x": 4,
-						"y": 1
+						"x": 2,
+						"y": 0
 					},
 					"path": "textures/dirt01.jpg",
 					"hey": "Hello",
@@ -136,7 +137,7 @@
 							"ck;ghsdfg": "",
 							"rtefdg": 0,
 							"nestedlist1": [],
-							"color": 0
+							"color": 13917696
 						}
 					],
 					"testtext": "",
@@ -148,7 +149,7 @@
 						"rtefdg": 0,
 						"nestedlist1": []
 					},
-					"testscript": "",
+					"testscript": "function close() {\n\tif( script != null ) saveValue();\n\tsuper.close();\n}",
 					"enumtest": 0,
 					"testInt": 0
 				},
@@ -166,7 +167,7 @@
 							"ck;ghsdfg": "",
 							"rtefdg": 0,
 							"nestedlist1": [],
-							"color": 4672255
+							"color": 13917696
 						}
 					],
 					"testflags2": 0,
@@ -187,12 +188,12 @@
 					},
 					"testlist": [
 						{
-							"testflags": 0,
-							"testId": "",
-							"nestedlist1": [],
-							"color": 0,
+							"testflags": 32,
+							"testId": "test2",
 							"ck;ghsdfg": "",
-							"rtefdg": 0
+							"rtefdg": 0,
+							"nestedlist1": [],
+							"color": 13917696
 						}
 					],
 					"testflags2": 0,
@@ -313,7 +314,7 @@
 						],
 						"testcolor": 5167104,
 						"tiletest": null,
-						"rdhgyyr": "",
+						"rdhgyyr": "6",
 						"textest": ".addCla"
 					},
 					"group": 3,
@@ -663,25 +664,64 @@
 					"kind": null
 				},
 				{
-					"typeStr": "3",
-					"name": "testInt2",
+					"typeStr": "6:sheet3",
+					"name": "testRef",
 					"kind": null
 				},
 				{
-					"typeStr": "3",
-					"name": "testint3",
-					"kind": null
+					"typeStr": "4",
+					"name": "testInt2"
+				},
+				{
+					"typeStr": "4",
+					"name": "testint3"
 				},
 				{
 					"typeStr": "3",
-					"name": "ergfdfg",
+					"name": "rgfdfg"
+				},
+				{
+					"typeStr": "17",
+					"name": "testprops",
 					"kind": null
+				},
+				{
+					"typeStr": "1",
+					"name": "testScript4",
+					"kind": "script"
+				},
+				{
+					"typeStr": "1",
+					"name": "dqfgqdfg",
+					"kind": null
+				},
+				{
+					"typeStr": "1",
+					"name": "testscript5",
+					"kind": "script"
 				}
 			],
 			"separators": [],
 			"props": {
 				"dataFiles": "testdatafiles1"
 			}
+		},
+		{
+			"name": "sheet1@testprops",
+			"props": {
+				"hide": true,
+				"isProps": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "teststring",
+					"opt": true,
+					"kind": null
+				}
+			]
 		},
 		{
 			"name": "sheet8",
@@ -733,20 +773,20 @@
 			],
 			"lines": [
 				{
-					"idSheet3": "s31",
+					"idSheet3": "s311",
 					"requires": "A_NOTICEABLE_NAME",
 					"texttest": ""
 				},
 				{
 					"idSheet3": "s32",
-					"inherits": "s31",
-					"requires": "Char3",
+					"inherits": "s311",
+					"requires": "Char1",
 					"texttest": ""
 				},
 				{
 					"idSheet3": "s33",
-					"inherits": "s31",
-					"requires": "Char3",
+					"inherits": "s33",
+					"requires": "Char1",
 					"texttest": ""
 				},
 				{
@@ -756,9 +796,9 @@
 					"texttest": ""
 				},
 				{
-					"idSheet3": "s35",
-					"inherits": "s31",
-					"requires": "Char2",
+					"idSheet3": "s356",
+					"inherits": "s311",
+					"requires": "Char1",
 					"texttest": ""
 				}
 			],
@@ -782,15 +822,15 @@
 			"lines": [
 				{
 					"": "hello1",
-					"ref to not-nested": "Char2"
+					"ref to not-nested": "Char1"
 				},
 				{
 					"": "hello3",
-					"ref to not-nested": "Char2"
+					"ref to not-nested": "Char1"
 				},
 				{
 					"": "",
-					"ref to not-nested": "Char2"
+					"ref to not-nested": "Char1"
 				}
 			],
 			"separators": [],
