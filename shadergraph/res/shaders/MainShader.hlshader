@@ -1,8 +1,8 @@
 {
 	"nodes": [
 		{
-			"x": 308,
-			"y": 235,
+			"x": 114,
+			"y": 103,
 			"id": 0,
 			"type": "hrt.shgraph.ShaderParam",
 			"properties": {
@@ -10,8 +10,8 @@
 			}
 		},
 		{
-			"x": 884,
-			"y": 222,
+			"x": 906,
+			"y": 210,
 			"id": 1,
 			"type": "hrt.shgraph.ShaderOutput",
 			"properties": {
@@ -22,8 +22,8 @@
 			}
 		},
 		{
-			"x": 606,
-			"y": 206,
+			"x": 591,
+			"y": 345,
 			"id": 2,
 			"type": "hrt.shgraph.nodes.Multiply",
 			"properties": {
@@ -32,33 +32,52 @@
 			}
 		},
 		{
-			"x": 307,
-			"y": 385,
+			"x": 288,
+			"y": 409,
 			"id": 3,
 			"type": "hrt.shgraph.ShaderParam",
 			"properties": {
 				"parameterId": 1
 			}
+		},
+		{
+			"x": 591,
+			"y": 498,
+			"id": 4,
+			"type": "hrt.shgraph.ShaderParam",
+			"properties": {
+				"parameterId": 1
+			}
+		},
+		{
+			"x": 346,
+			"y": 73,
+			"id": 5,
+			"type": "hrt.shgraph.nodes.SubGraph",
+			"properties": {
+				"pathShaderGraph": "shaders/test.hlshader",
+				"parametersValues": []
+			}
 		}
 	],
 	"edges": [
 		{
-			"idOutput": 2,
-			"nameOutput": "output",
+			"idOutput": 5,
+			"nameOutput": "shgraph_5_0",
 			"idInput": 1,
 			"nameInput": "input"
-		},
-		{
-			"idOutput": 3,
-			"nameOutput": "output",
-			"idInput": 2,
-			"nameInput": "b"
 		},
 		{
 			"idOutput": 0,
 			"nameOutput": "output",
 			"idInput": 2,
 			"nameInput": "a"
+		},
+		{
+			"idOutput": 3,
+			"nameOutput": "output",
+			"idInput": 2,
+			"nameInput": "b"
 		}
 	],
 	"parameters": [
@@ -78,7 +97,7 @@
 		},
 		{
 			"id": 1,
-			"name": "col_2",
+			"name": "col_3",
 			"type": [
 				"TVec",
 				"4,VFloat"

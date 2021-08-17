@@ -1,0 +1,49 @@
+{
+	"nodes": [
+		{
+			"x": 811,
+			"y": 140,
+			"id": 0,
+			"type": "hrt.shgraph.ShaderOutput",
+			"properties": {
+				"variable": [
+					"pixelColor",
+					"TVec"
+				]
+			}
+		},
+		{
+			"x": 372,
+			"y": 108,
+			"id": 3,
+			"type": "hrt.shgraph.ShaderParam",
+			"properties": {
+				"parameterId": 0
+			}
+		}
+	],
+	"edges": [
+		{
+			"idOutput": 3,
+			"nameOutput": "output",
+			"idInput": 0,
+			"nameInput": "input"
+		}
+	],
+	"parameters": [
+		{
+			"id": 0,
+			"name": "Param_0",
+			"type": [
+				"TVec",
+				"4,VFloat"
+			],
+			"defaultValue": [
+				1,
+				0,
+				0,
+				1
+			]
+		}
+	]
+}
