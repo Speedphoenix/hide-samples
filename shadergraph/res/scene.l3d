@@ -33,6 +33,12 @@
 							0.5568627450980392,
 							0.7764705882352941,
 							1
+						],
+						"col_3": [
+							0.2627450980392157,
+							0.5568627450980392,
+							0.7764705882352941,
+							1
 						]
 					}
 				}
@@ -102,6 +108,20 @@
 			"x": 3.33,
 			"y": 3.68,
 			"rotationZ": 122.1
+		},
+		{
+			"type": "renderProps",
+			"name": "renderProps",
+			"props": {
+				"PBR": {
+					"mode": "Pbr",
+					"emissive": 1,
+					"exposure": 0,
+					"sky": "Background",
+					"tone": "Linear",
+					"occlusion": 1
+				}
+			}
 		}
 	]
 }
