@@ -21,15 +21,12 @@
 				{
 					"typeStr": "8",
 					"name": "testlist",
-					"kind": null
+					"opt": true
 				},
 				{
 					"typeStr": "17",
 					"name": "testpropsagain",
-					"kind": null,
-					"editor": {
-						"categories": null
-					}
+					"opt": true
 				},
 				{
 					"typeStr": "5:df,y,tr,s",
@@ -61,7 +58,7 @@
 				{
 					"typeStr": "1",
 					"name": "testtext",
-					"kind": null
+					"opt": true
 				},
 				{
 					"typeStr": "3",
@@ -104,13 +101,21 @@
 					"hey": "Hello",
 					"test": "character/Kobold01/Anim_death.FBX",
 					"testflags2": 0,
-					"testlist": [],
-					"testtext": "",
+					"testlist": [
+						{
+							"testflags": 32,
+							"testId": "test2",
+							"ck;ghsdfg": "",
+							"rtefdg": 0,
+							"nestedlist1": [],
+							"color": 13917696
+						}
+					],
 					"color": 6859423,
-					"testpropsagain": {},
 					"testscript": "function close() {\n\tif( script != null ) saveValue();\n\tsuper.close();\n}\n\nfunction saveValue() {\n\tvar code = [for( line in script.code.split(\"\\r\\n\").join(\"\\n\").split(\"\\n\") ) StringTools.rtrim(line)].join(\"\\n\");\n\tcell.setValue(code);\n}\n\nfunction refresh() {\n\tvar first = script == null;\n\telement.html(\"<div class='cdb-script'></div>\");\n\tvar div = element.children(\"div\");\n\tvar ids = [];\n\tvar table = cell.table;\n\tvar obj = cell.line.obj;\n\twhile( table != null ) {\n\t\tvar idCol = table.getRealSheet().idCol;\n\t\tif( idCol != null ) {\n\t\t\tvar id = Reflect.field(obj, idCol.name);\n\t\t\tif( id == null ) id = \"#\";\n\t\t\tids.unshift(id);\n\t\t}\n\t\tvar st = Std.downcast(table, SubTable);\n\t\ttable = table.parent;\n\t\tif( st != null ) obj = st.cell.line.obj;\n\t}\n}\n",
 					"enumtest": 0,
-					"testInt": 0
+					"testInt": 0,
+					"testtext": "Hello there"
 				},
 				{
 					"id": "Char3",
@@ -140,7 +145,6 @@
 							"color": 13917696
 						}
 					],
-					"testtext": "",
 					"color": 13917696,
 					"testpropsagain": {
 						"testflags": 32,
@@ -174,9 +178,7 @@
 					"test": "",
 					"hey": "Hello",
 					"group": 1,
-					"testtext": "",
 					"color": 5167104,
-					"testpropsagain": {},
 					"testscript": "",
 					"enumtest": 0,
 					"testInt": 0
@@ -202,7 +204,6 @@
 					"group": 1,
 					"testtext": "Hello there",
 					"color": 0,
-					"testpropsagain": {},
 					"testscript": "",
 					"enumtest": 0,
 					"testInt": 0
@@ -295,7 +296,6 @@
 					],
 					"testtext": "é",
 					"color": 8750469,
-					"testpropsagain": {},
 					"testscript": "",
 					"enumtest": 0,
 					"testInt": 100,
@@ -328,7 +328,16 @@
 					"hey": "Hello",
 					"test": "",
 					"testflags2": 0,
-					"testlist": [],
+					"testlist": [
+						{
+							"testflags": 32,
+							"testId": "test2",
+							"ck;ghsdfg": "",
+							"rtefdg": 0,
+							"nestedlist1": [],
+							"color": 13917696
+						}
+					],
 					"testtext": ".addCla",
 					"color": 5167104,
 					"testpropsagain": {
@@ -352,13 +361,21 @@
 					"hey": "Hello",
 					"test": "",
 					"testflags2": 0,
-					"testlist": [],
 					"testtext": "Hello there",
 					"color": 0,
-					"testpropsagain": {},
 					"testscript": "",
 					"enumtest": 0,
-					"testInt": 7
+					"testInt": 7,
+					"testlist": [
+						{
+							"testflags": 32,
+							"testId": "test2",
+							"ck;ghsdfg": "",
+							"rtefdg": 0,
+							"nestedlist1": [],
+							"color": 13917696
+						}
+					]
 				},
 				{
 					"id": "Char4",
@@ -393,27 +410,24 @@
 					"hey": "Hello",
 					"test": "[{ swdths : \"character/Kobold01/Anim_death.FBX\" }]",
 					"testflags2": 0,
-					"testlist": [],
 					"testtext": "Hello there",
 					"color": 8750469,
-					"testpropsagain": {},
 					"testscript": "",
 					"enumtest": 0,
-					"testInt": 0
+					"testInt": 0,
+					"testlist": []
 				},
 				{
 					"id": "sgadablouch",
 					"props": {
 						"test3": false
 					},
-					"testlist": [],
 					"testflags2": 0,
 					"test": "",
 					"hey": "Hello",
 					"group": 4,
 					"testtext": "Hello there",
 					"color": 0,
-					"testpropsagain": {},
 					"testscript": "",
 					"enumtest": 0,
 					"testInt": 0
@@ -423,8 +437,6 @@
 					"props": {
 						"test3": false
 					},
-					"testlist": [],
-					"testpropsagain": {},
 					"enumtest": 0,
 					"color": 0,
 					"testflags2": 0,
@@ -440,12 +452,9 @@
 					"props": {
 						"test3": false
 					},
-					"testlist": [],
-					"testpropsagain": {},
 					"enumtest": 0,
 					"color": 0,
 					"testflags2": 0,
-					"testtext": "",
 					"testscript": "",
 					"test": "",
 					"hey": "",
@@ -457,12 +466,9 @@
 					"props": {
 						"test3": false
 					},
-					"testlist": [],
-					"testpropsagain": {},
 					"enumtest": 0,
 					"color": 0,
 					"testflags2": 0,
-					"testtext": "",
 					"testscript": "",
 					"test": "",
 					"hey": "",
@@ -474,12 +480,9 @@
 					"props": {
 						"test3": false
 					},
-					"testlist": [],
-					"testpropsagain": {},
 					"enumtest": 0,
 					"color": 0,
 					"testflags2": 0,
-					"testtext": "",
 					"testscript": "",
 					"test": "",
 					"hey": "",
