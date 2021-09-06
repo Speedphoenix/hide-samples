@@ -1,0 +1,45 @@
+{
+	"nodes": [
+		{
+			"x": 674,
+			"y": 304,
+			"id": 0,
+			"type": "hrt.shgraph.ShaderOutput",
+			"properties": {
+				"variable": [
+					"pixelColor",
+					"TVec",
+					[
+						4,
+						{
+							"_hx_index": 1,
+							"__enum__": "hxsl.VecType"
+						}
+					]
+				]
+			}
+		},
+		{
+			"x": 298,
+			"y": 355,
+			"id": 1,
+			"type": "hrt.shgraph.nodes.Color",
+			"properties": {
+				"r": 1,
+				"g": 0,
+				"b": 0,
+				"a": 1,
+				"name": ""
+			}
+		}
+	],
+	"edges": [
+		{
+			"idOutput": 1,
+			"nameOutput": "output",
+			"idInput": 0,
+			"nameInput": "input"
+		}
+	],
+	"parameters": []
+}

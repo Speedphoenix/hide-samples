@@ -22,16 +22,6 @@
 			}
 		},
 		{
-			"x": 400,
-			"y": 349,
-			"id": 6,
-			"type": "hrt.shgraph.nodes.SubGraph",
-			"properties": {
-				"pathShaderGraph": "shaders/test.hlshader",
-				"parametersValues": []
-			}
-		},
-		{
 			"x": 381,
 			"y": -45,
 			"id": 7,
@@ -66,18 +56,6 @@
 			"nameOutput": "output",
 			"idInput": 1,
 			"nameInput": "input"
-		},
-		{
-			"idOutput": 9,
-			"nameOutput": "output",
-			"idInput": 6,
-			"nameInput": "shgraph_6_param_0"
-		},
-		{
-			"idOutput": 0,
-			"nameOutput": "output",
-			"idInput": 6,
-			"nameInput": "shgraph_6_6"
 		},
 		{
 			"idOutput": 6,

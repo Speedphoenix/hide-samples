@@ -1,0 +1,57 @@
+{
+	"nodes": [
+		{
+			"x": 295,
+			"y": 369,
+			"id": 0,
+			"type": "hrt.shgraph.ShaderInput",
+			"properties": {
+				"variable": "pixelColor"
+			}
+		},
+		{
+			"x": 681,
+			"y": 373,
+			"id": 1,
+			"type": "hrt.shgraph.ShaderOutput",
+			"properties": {
+				"variable": [
+					"pixelColor",
+					"TVec",
+					[
+						4,
+						{
+							"_hx_index": 1,
+							"__enum__": "hxsl.VecType"
+						}
+					]
+				]
+			}
+		},
+		{
+			"x": 559,
+			"y": 364,
+			"id": 2,
+			"type": "hrt.shgraph.nodes.Multiply",
+			"properties": {
+				"prop_a": null,
+				"prop_b": 0.5
+			}
+		}
+	],
+	"edges": [
+		{
+			"idOutput": 2,
+			"nameOutput": "output",
+			"idInput": 1,
+			"nameInput": "input"
+		},
+		{
+			"idOutput": 0,
+			"nameOutput": "output",
+			"idInput": 2,
+			"nameInput": "a"
+		}
+	],
+	"parameters": []
+}

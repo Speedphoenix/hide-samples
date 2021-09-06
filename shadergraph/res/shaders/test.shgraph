@@ -1,0 +1,105 @@
+{
+	"nodes": [
+		{
+			"x": 198,
+			"y": 64,
+			"id": 3,
+			"type": "hrt.shgraph.ShaderParam",
+			"properties": {
+				"parameterId": 0
+			}
+		},
+		{
+			"x": 557,
+			"y": 49,
+			"id": 11,
+			"type": "hrt.shgraph.nodes.Add",
+			"properties": {
+				"prop_a": null,
+				"prop_b": null
+			}
+		},
+		{
+			"x": 279,
+			"y": -76,
+			"id": 12,
+			"type": "hrt.shgraph.nodes.Color",
+			"properties": {
+				"r": 0.0392156862745098,
+				"g": 0.43529411764705883,
+				"b": 0.7843137254901961,
+				"a": 1,
+				"name": "constadd"
+			}
+		},
+		{
+			"x": 740,
+			"y": 34,
+			"id": 14,
+			"type": "hrt.shgraph.ShaderOutput",
+			"properties": {
+				"variable": [
+					"pixelColor",
+					"TVec",
+					[
+						4,
+						{
+							"_hx_index": 1,
+							"__enum__": "hxsl.VecType"
+						}
+					]
+				]
+			}
+		}
+	],
+	"edges": [
+		{
+			"idOutput": 3,
+			"nameOutput": "output",
+			"idInput": 11,
+			"nameInput": "b"
+		},
+		{
+			"idOutput": 12,
+			"nameOutput": "output",
+			"idInput": 11,
+			"nameInput": "a"
+		},
+		{
+			"idOutput": 11,
+			"nameOutput": "output",
+			"idInput": 14,
+			"nameInput": "input"
+		}
+	],
+	"parameters": [
+		{
+			"id": 0,
+			"name": "Param_0",
+			"type": [
+				"TVec",
+				"4,VFloat"
+			],
+			"defaultValue": [
+				1,
+				0,
+				0,
+				1
+			]
+		},
+		{
+			"id": 1,
+			"name": "Param_1",
+			"type": [
+				"TVec",
+				"4,VFloat"
+			],
+			"defaultValue": [
+				0,
+				0,
+				0,
+				1
+			]
+		}
+	]
+}

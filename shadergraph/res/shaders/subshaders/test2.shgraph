@@ -1,0 +1,70 @@
+{
+	"nodes": [
+		{
+			"x": 725,
+			"y": 190,
+			"id": 2,
+			"type": "hrt.shgraph.ShaderOutput",
+			"properties": {
+				"variable": [
+					"pixelColor",
+					"TVec"
+				]
+			}
+		},
+		{
+			"x": -38,
+			"y": 256,
+			"id": 3,
+			"type": "hrt.shgraph.nodes.Color",
+			"properties": {
+				"r": 0.6784313725490196,
+				"g": 0,
+				"b": 0,
+				"a": 1,
+				"name": ""
+			}
+		},
+		{
+			"x": 535,
+			"y": 229,
+			"id": 6,
+			"type": "hrt.shgraph.nodes.Add",
+			"properties": {
+				"prop_a": null,
+				"prop_b": null
+			}
+		},
+		{
+			"x": 187,
+			"y": 401,
+			"id": 8,
+			"type": "hrt.shgraph.nodes.SubGraph",
+			"properties": {
+				"pathShaderGraph": "shaders/test.shgraph",
+				"parametersValues": []
+			}
+		}
+	],
+	"edges": [
+		{
+			"idOutput": 6,
+			"nameOutput": "output",
+			"idInput": 2,
+			"nameInput": "input"
+		},
+		{
+			"idOutput": 3,
+			"nameOutput": "output",
+			"idInput": 6,
+			"nameInput": "a"
+		},
+		{
+			"idOutput": 8,
+			"nameOutput": "shgraph_8_14",
+			"idInput": 6,
+			"nameInput": "b"
+		}
+	],
+	"parameters": []
+}

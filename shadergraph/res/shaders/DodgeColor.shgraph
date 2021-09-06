@@ -66,7 +66,7 @@
 			"id": 9,
 			"type": "hrt.shgraph.nodes.SubGraph",
 			"properties": {
-				"pathShaderGraph": "shaders/subshaders/BlendColorDodge.hlshader",
+				"pathShaderGraph": "shaders/subshaders/BlendColorDodge.shgraph",
 				"parametersValues": []
 			}
 		},
@@ -76,7 +76,7 @@
 			"id": 10,
 			"type": "hrt.shgraph.nodes.SubGraph",
 			"properties": {
-				"pathShaderGraph": "shaders/subshaders/BlendColorDodge.hlshader",
+				"pathShaderGraph": "shaders/subshaders/BlendColorDodge.shgraph",
 				"parametersValues": []
 			}
 		},
@@ -86,7 +86,7 @@
 			"id": 11,
 			"type": "hrt.shgraph.nodes.SubGraph",
 			"properties": {
-				"pathShaderGraph": "shaders/subshaders/BlendColorDodge.hlshader",
+				"pathShaderGraph": "shaders/subshaders/BlendColorDodge.shgraph",
 				"parametersValues": []
 			}
 		},

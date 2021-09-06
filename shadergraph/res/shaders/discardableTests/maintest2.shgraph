@@ -1,0 +1,61 @@
+{
+	"nodes": [
+		{
+			"x": 858,
+			"y": 303,
+			"id": 3,
+			"type": "hrt.shgraph.ShaderOutput",
+			"properties": {
+				"variable": [
+					"pixelColor",
+					"TVec",
+					[
+						4,
+						{
+							"_hx_index": 1,
+							"__enum__": "hxsl.VecType"
+						}
+					]
+				]
+			}
+		},
+		{
+			"x": 399,
+			"y": 326,
+			"id": 4,
+			"type": "hrt.shgraph.nodes.SubGraph",
+			"properties": {
+				"pathShaderGraph": "shaders/test.shgraph",
+				"parametersValues": []
+			}
+		},
+		{
+			"x": 155,
+			"y": 462,
+			"id": 5,
+			"type": "hrt.shgraph.nodes.Color",
+			"properties": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1,
+				"name": ""
+			}
+		}
+	],
+	"edges": [
+		{
+			"idOutput": 4,
+			"nameOutput": "shgraph_4_14",
+			"idInput": 3,
+			"nameInput": "input"
+		},
+		{
+			"idOutput": 5,
+			"nameOutput": "output",
+			"idInput": 4,
+			"nameInput": "shgraph_4_param_0"
+		}
+	],
+	"parameters": []
+}

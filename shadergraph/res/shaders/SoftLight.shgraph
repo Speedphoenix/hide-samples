@@ -43,7 +43,7 @@
 			"id": 5,
 			"type": "hrt.shgraph.nodes.SubGraph",
 			"properties": {
-				"pathShaderGraph": "shaders/subshaders/BlendSoftLight.hlshader",
+				"pathShaderGraph": "shaders/subshaders/BlendSoftLight.shgraph",
 				"parametersValues": []
 			}
 		},

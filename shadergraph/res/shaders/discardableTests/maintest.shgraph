@@ -1,0 +1,83 @@
+{
+	"nodes": [
+		{
+			"x": 679,
+			"y": 317,
+			"id": 0,
+			"type": "hrt.shgraph.ShaderOutput",
+			"properties": {
+				"variable": [
+					"pixelColor",
+					"TVec"
+				]
+			}
+		},
+		{
+			"x": 350,
+			"y": 341,
+			"id": 1,
+			"type": "hrt.shgraph.nodes.SubGraph",
+			"properties": {
+				"pathShaderGraph": "shaders/discardableTests/subtest.shgraph",
+				"parametersValues": []
+			}
+		},
+		{
+			"x": 141,
+			"y": 258,
+			"id": 2,
+			"type": "hrt.shgraph.nodes.FloatConst",
+			"properties": {
+				"value": 1,
+				"name": ""
+			}
+		},
+		{
+			"x": 139,
+			"y": 323,
+			"id": 3,
+			"type": "hrt.shgraph.nodes.FloatConst",
+			"properties": {
+				"value": 1,
+				"name": ""
+			}
+		},
+		{
+			"x": 124,
+			"y": 396,
+			"id": 4,
+			"type": "hrt.shgraph.nodes.FloatConst",
+			"properties": {
+				"value": 0,
+				"name": ""
+			}
+		}
+	],
+	"edges": [
+		{
+			"idOutput": 1,
+			"nameOutput": "shgraph_1_0",
+			"idInput": 0,
+			"nameInput": "input"
+		},
+		{
+			"idOutput": 2,
+			"nameOutput": "output",
+			"idInput": 1,
+			"nameInput": "shgraph_1_param_0"
+		},
+		{
+			"idOutput": 3,
+			"nameOutput": "output",
+			"idInput": 1,
+			"nameInput": "shgraph_1_param_1"
+		},
+		{
+			"idOutput": 4,
+			"nameOutput": "output",
+			"idInput": 1,
+			"nameInput": "shgraph_1_param_2"
+		}
+	],
+	"parameters": []
+}
