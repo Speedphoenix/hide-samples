@@ -865,10 +865,81 @@
 		},
 		{
 			"name": "sheet7",
-			"columns": [],
-			"lines": [],
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "idsheet7",
+					"kind": null,
+					"scope": null
+				},
+				{
+					"typeStr": "17",
+					"name": "proptest",
+					"kind": null
+				}
+			],
+			"lines": [
+				{
+					"idsheet7": "hello",
+					"proptest": {
+						"testList": [
+							{
+								"strtype": "Economic",
+								"proba": 0
+							},
+							{
+								"strtype": "Military",
+								"proba": 0
+							}
+						]
+					}
+				},
+				{
+					"idsheet7": "pastereceiver",
+					"proptest": {
+						"strtype": "Economic",
+						"proba": 0
+					}
+				}
+			],
 			"separators": [],
 			"props": {}
+		},
+		{
+			"name": "sheet7@proptest",
+			"props": {
+				"hide": true,
+				"isProps": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "8",
+					"name": "testList",
+					"opt": true,
+					"kind": null
+				}
+			]
+		},
+		{
+			"name": "sheet7@proptest@testList",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "strtype"
+				},
+				{
+					"typeStr": "4",
+					"name": "proba",
+					"kind": null
+				}
+			]
 		},
 		{
 			"name": "sdfsdf@testprops",
